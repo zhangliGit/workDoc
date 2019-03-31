@@ -89,26 +89,13 @@
   </style>
 </head>
 <body>
-  <header id="header">
-    <aside class="logo">
-      前端笔记
-    </aside>
-    <div id="menuList" class="menuList">
-      <ul>
-        <li class="active-li">介绍</li>
-        <li>css</li>
-        <li>html</li>
-        <li>javascript</li>
-      </ul>
-    </div>
-  </header>
   <div id="app">
     <div id="homeLoading"></div>
   </div>
   <script>
     window.$docsify = {
       repo: 'https://github.com/zhangliGit',
-      loadSidebar: true,
+      loadSidebar: '_sidebar.md',
       loadNavbar: true,
       subMaxLevel: 3,
       auto2top: true,
@@ -120,13 +107,10 @@
       autoHeader: true,
       executeScript: true,
       mergeNavbar: true,
-      notFoundPage: true,
-      ga: 'UA-XXXXX-Y',
-      disqus: 'shortname'
+      notFoundPage: true
     }
   </script>
   <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="https://unpkg.com/docsify/lib/plugins/ga.js"></script>
   <script src="https://unpkg.com/docsify/lib/plugins/emoji.js"></script>
   <script src="https://unpkg.com/docsify-copy-code"></script>
   <script src="https://unpkg.com/docsify/lib/plugins/external-script.js"></script>
