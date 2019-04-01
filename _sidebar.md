@@ -1,4 +1,8 @@
 * 概要
+* 浏览器
+  * [DOM](/_javascript/dom.md)
+  * [BOM](/_javascript/bom.md)
+  * [渲染机制](/_javascript/渲染机制.md)
 * html
 * css
   * [css2](/_css/css2.md)
@@ -7,8 +11,6 @@
   * [伪类](/_css/伪类.md)
   * [布局](/_css/布局.md)
 * javaScript
-  * [DOM](/_javascript/dom.md)
-  * [BOM](/_javascript/bom.md)
   * [ES5](/_javascript/es5.md)
   * [ES6/7/8](/_javascript/es6.md)
   * [javascript引擎](/_javascript/引擎.md)
