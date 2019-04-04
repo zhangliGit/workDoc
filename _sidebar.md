@@ -3,7 +3,9 @@
   * [浏览器内核](/_javascript/浏览器内核.md)
   * [浏览器渲染原理](/_javascript/浏览器渲染原理.md)
   * [浏览器默认事件](/_javascript/浏览器默认事件.md)
-* html
+  * [浏览器调试](/_javascript/浏览器调试.md)
+* html5
+  * [本地存储](/_html5/本地存储.md)
 * css
   * [css2](/_css/css2.md)
   * [css3](/_css/css3.md)
@@ -34,8 +36,14 @@
   * [路由](/_react/路由.md)
   * [状态管理](/_react/状态管理.md)
 * webpack
+  * [常用配置](/_webpack/config.md)
+  * [插件配置](/_webpack/plugin.md)
 * 前端性能
 * 前端安全
+* nginx
+  * [nginx安装])(/_nginx/install.md)
+  * [https配置])(/_nginx/https.md)
+* node
 * 前端问题记录
   * [杂类](_problem/杂类.md)
   * [html](_problem/html.md)
