@@ -2,7 +2,7 @@
 * 浏览器
   * [DOM](/_javascript/dom.md)
   * [BOM](/_javascript/bom.md)
-  * [渲染机制](/_javascript/渲染机制.md)
+  * [浏览器渲染](/_javascript/浏览器渲染.md)
 * html
 * css
   * [css2](/_css/css2.md)
