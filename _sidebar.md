@@ -22,8 +22,11 @@
   * [javascript引擎](/_javascript/引擎.md)
   * [javascript核心概念](/_javascript/核心概念.md)
 * vue
+  * [源码解读](/_vue/源码解读.md)
+  * [问题思考](/_vue/问题思考.md)
   * [核心体系](/_vue/核心体系.md)
   * [常用功能](/_vue/常用功能.md)
+  * [生命周期](/_vue/生命周期.md)
   * [组件交互](/_vue/组件交互.md)
   * [路由](/_vue/路由.md)
   * [状态管理](/_vue/状态管理.md)
@@ -39,10 +42,12 @@
   * [常用配置](/_webpack/config.md)
   * [插件配置](/_webpack/plugin.md)
 * 前端性能
+* weex
+  * [什么是weex](/_weex/weex是什么.md)
 * 前端安全
 * nginx
-  * [nginx安装])(/_nginx/install.md)
-  * [https配置])(/_nginx/https.md)
+  * [nginx安装](/_nginx/install.md)
+  * [https配置](/_nginx/https.md)
 * node
 * 前端问题记录
   * [杂类](_problem/杂类.md)
