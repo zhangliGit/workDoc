@@ -48,6 +48,8 @@
 * nginx
   * [nginx安装](/_nginx/install.md)
   * [https配置](/_nginx/https.md)
+  * [操作命令](/_nginx/操作命令.md)
+  * [常见配置](/_nginx/常见配置.md)
 * node
 * 前端问题记录
   * [杂类](_problem/杂类.md)

@@ -47,3 +47,90 @@ module.exports = {
 !> 如果没有配置pathRewrite, 转发时不会带/healthy路径，`http://localhost:8080/healthy/list`则会被代理到`http://test.coracle.com:10151/patachealth/list`
 
 !> 如果有配置pathRewrite, 则会带上配置的路径，`http://localhost:8080/healthy/list`则会被代理到`http://test.coracle.com:10151/patachealth/healthy/list`
+
+
+### 第三方库cdn加速配置
+
+```
+```
+
+### vue-cli3.0配置多环境
+
+在项目开发过程中，我们往往会有多个环境切换开发，一般有测试环境，开发环境和生产环境的区分，为了方便切换环境，可以在打包时自定义配置，不用手动更改
+
++ 测试环境：开发中一般用mock模拟接口来开发
++ 开发环境：调用后端服务器接口进行联调开发
++ 生产环境：用于上线发布的环境
+
+**配置分为下面几个部分**
+
+> 配置package.json
+
+通过--mode配置了不同命令的打包模式，最终会指向根目录对应.env.[mode]文件，在里面可以重新设置打包模式和环境变量，通过环境变量来确定对应的url地址
+
+```js
+"scripts": {
+  "dev": "vue-cli-service serve --open", // 默认开启开发环境
+  "dev-test": "vue-cli-service serve --open --mode dev-test", // 开启测试环境
+  "dev-prod": "vue-cli-service serve --open --mode dev-prod", // 开启生产环境
+  "build": "vue-cli-service build", // 默认打包开发环境
+  "build-test": "vue-cli-service build --mode build-test", // 打包测试环境
+  "build-prod": "vue-cli-service build --mode build-prod", // 打包生产环境
+  "lint": "vue-cli-service lint",
+  "test:unit": "vue-cli-service test:unit"
+}
+```
+
+> 新增对应的环境变量文件
+
+需要在文件中重新设置模式为development和production 不然本地启动或打包会报错，因为默认的模式只支持development，production和test这三种
+
++ .env.dev-test 
+
+```
+//  本地开启测试环境
+NODE_ENV = develoment
+VUE_APP_URL = 'test'
+```
++ .env.dev-prod
+
+```
+// 本地开启生产环境
+NODE_ENV = development
+VUE_APP_URL = 'prod'
+```
+
++ .env.build-test
+
+```
+// 打包测试环境
+NODE_ENV = production
+VUE_APP_URL =  'test'
+```
+
++ .env.build-prod
+
+```
+// 打包生产环境
+NODE_ENV = production
+VUE_APP_URL = 'prod'
+```
+
+> 配置接口环境文件
+
+在项目文件中可以通过process.env.VUE_APP_URL拿到环境变量，通过判断设置不同的url
+
+```js
+const  CONFIG_ENV = process.env.VUE_APP_URL
+let hostUrl = ''
+
+if (CONFIG_ENV === 'test') {
+  hostUrl = '我是测试环境'
+}  else if (CONFIG_ENV === 'prod') {
+  hostUrl = '我是正式环境 '
+} else {
+  hostUrl = '我是开发环境'
+}
+
+export default hostUrl
+```
