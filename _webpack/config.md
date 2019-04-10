@@ -134,3 +134,9 @@ if (CONFIG_ENV === 'test') {
 
 export default hostUrl
 ```
+
+### vue-cli3.0打包history模式
+
+```
+
+```
