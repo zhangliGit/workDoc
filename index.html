@@ -116,17 +116,5 @@
   <script src="https://unpkg.com/docsify/lib/plugins/external-script.js"></script>
 </body>
 <script>
-  document.querySelector("#menuList").addEventListener('click', function(evt){
-    if (evt.target.innerHTML === '介绍') {
-      var path = 'README';
-      window.$docsify.loadSidebar = true;
-      window.location.reload();
-    } else {
-      var path = evt.target.innerHTML;
-      window.$docsify.loadSidebar = false;
-    }
-    var host = window.location.href.split("#")[0];
-    window.location.href = host + '#/' + path;
-  }, false)
 </script>
 </html>

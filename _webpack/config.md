@@ -51,7 +51,29 @@ module.exports = {
 
 ### 第三方库cdn加速配置
 
+使用cdn加速服务访问第三方模块，可以大大的降低打包文件体积大小提交网页加载速度
+
+目前使用的是本地和打包文件都使用cdn加速
+
+在html文件中直接加入cdn连接
+
+```html
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/vue-router/3.0.2/vue-router.min.js"></script>
+<script src="https://cdn.bootcss.com/vuex/3.1.0/vuex.min.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
 ```
+
+在vue.config.js中加入配置
+```js
+chainWebpack: config => {
+  config.externals = {
+    'vue': 'Vue',
+    'vue-router': 'VueRouter',
+    'vuex': 'Vuex',
+    'axios': 'axios'
+  }
+}
 ```
 
 ### vue-cli3.0配置多环境
@@ -138,5 +160,5 @@ export default hostUrl
 ### vue-cli3.0打包history模式
 
 ```
-
+打包的history模式需要在服务器中配置访问，还需配置刷新访问404问题， 本地不能访问
 ```
