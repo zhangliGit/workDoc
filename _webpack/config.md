@@ -51,6 +51,8 @@ module.exports = {
 
 ### 第三方库cdn加速配置
 
+`简单的手动配置`
+
 使用cdn加速服务访问第三方模块，可以大大的降低打包文件体积大小提交网页加载速度
 
 目前使用的是本地和打包文件都使用cdn加速
@@ -74,6 +76,44 @@ chainWebpack: config => {
     'axios': 'axios'
   }
 }
+```
+
+`自动配置`
+
+通过htmlWebpackPlugin插件实现
+
+1. 在生成的html配置中注入cdn脚本数组，注入后就可以通过esj语法htmlWebpackPlugin.options.cdnConfig在html界面获取配置的项，然后遍历
+
+```js
+// 多页面配置
+exports.entries = function () {
+  let entries = {}
+  pageList.forEach((pageDir) => {
+    entries[pageDir] = {
+      // 入口文件
+      entry: `src/pages/${pageDir}/main.js`,
+      // 模板来源
+      template: 'public/index.html',
+      // 在 dist/index.html 的输出
+      filename: `${pageList.length === 1 ? 'index' : pageDir}.html`,
+      // 界面标题配置
+      title: '',
+      // 在这个页面中包含的块，默认情况下会包含
+      // 提取出来的通用 chunk 和 vendor chunk
+      cdnConfig: process.env.NODE_ENV === 'production' ? cdn : [],
+      chunks: ['chunk-vendors', 'chunk-common', pageDir]
+    }
+  })
+  return entries
+}
+```
+
+2. 在html模板中遍历配置cdn脚步
+
+```js
+<% htmlWebpackPlugin.options.cdnConfig.forEach(function(item){ %>
+  <script type="text/javascript" src="<%= item %>"></script>
+<% }) %>
 ```
 
 ### vue-cli3.0配置多环境
