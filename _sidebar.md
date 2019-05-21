@@ -55,9 +55,9 @@
   * [常用配置](/_webpack/config.md)
   * [插件配置](/_webpack/plugin.md)
 * 前端性能
-* weex
-  * [什么是weex](/_weex/weex是什么.md)
 * 前端安全
+* git
+  * [git操作](/_git/git操作.md)
 * nginx
   * [nginx安装](/_nginx/install.md)
   * [https配置](/_nginx/https.md)
