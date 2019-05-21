@@ -20,6 +20,12 @@ git branch [branchName] // 创建新分支 指向当前分支
 git checkout -b [branchName] // 创建新分支并切换到创建的分支
 ```
 
+### 拉去远程分支（本地没有）
+
+```js
+git fetch origin branchName:branchName
+```
+
 ### 切换分支
 
 ```js
