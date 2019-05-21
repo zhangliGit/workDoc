@@ -34,6 +34,7 @@
   * [javascript引擎](/_javascript/引擎.md)
   * [javascript核心概念](/_javascript/核心概念.md)
 * vue
+  * [vue3.0](/_vue/vue3.0.md)
   * [源码解读](/_vue/源码解读.md)
   * [问题思考](/_vue/问题思考.md)
   * [核心体系](/_vue/核心体系.md)

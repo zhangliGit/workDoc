@@ -13,6 +13,41 @@ window.sessionStorage.setItem('my-tag', 'true')
 window.localStorage.setItem('my-tag', true)
 ```
 
+### 离线缓存（application cache）
+
+**本地缓存应用所需要的文件**
+
+**优点**
+
++ 离线缓存所有需要的文件
+
++ 提升界面加载速度
+
++ 减轻服务器压力
+
+**缺点**
+
++ 会缓存所有动态的资源文件，包括html界面，当html界面更新的时候仍然会读取缓存的文件，达不到更新的效果 
+
+> 使用方法
+
++ 创建manifest文件，必须为xx.appcache后缀，请文件类型为text/cache-manifest
+
++ 在网页html标签中引入 <html manifest = "xx.appcache">
+
+
+### service worker
+
+
+### cacheStorage
+
+
+### indexedDB
+
+**索引性数据库**
+
+
+
 ### web worker
 
 > web worker是运行于后台的一个JavaScript进程，可以理解为脱离主线程的一个子线程，其不会对主线程的运行造成影响，所以其常用来执行一些耗时长，容易阻塞的任务
@@ -40,5 +75,10 @@ w.onmessage = function(event) {
 function stop() {
   w.terminate()
 }
-
 ```
+
+### canvas画布
+
+
+
+### webgl

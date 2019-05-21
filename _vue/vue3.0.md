@@ -1,0 +1,8 @@
+
+### 响应式
+
+vue2.x中的响应式是基于ES5里面的Object.defineProperty实现的代理，兼容主流浏览器以及ie9浏览器，能够监听到数据对象的变化，但是监听不到对象属性的增删，数组元素和长度的变化，同时在实例Vue的时候把所有的数据都observer，才能观察到数据对象属性的变化
+
+针对上述问题，vue3.0采用es6里面的proxy代理替换Object.defineProperty，可以监听到对象属性的新增和删除，以及数据元素和长度的变化，还可以监听map,set,weakMap,weakSet ,在初始化的时候不会创建所有属性的Observer，而是会在用到的时候才去监听，主流浏览器都支持proxy，而ie系列兼容性不好，vue3.0对ie系列做了单独的适配，暴露的api一样，但是底层的实现还是Object.defineProperty
+
+!> vue2.6中暴露了一个observable的api来创建响应式对象，可以替换掉event bus来做一些跨组件的通信
