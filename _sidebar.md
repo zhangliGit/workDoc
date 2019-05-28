@@ -29,10 +29,14 @@
 * javaScript
   * [bom](/_javascript/bom.md)
   * [dom](/_javascript/dom.md)
+  * [数组](/_javascript/数组.md)
+  * [对象](/_javascript/对象.md)
   * [ES5](/_javascript/es5.md)
   * [ES6/7/8](/_javascript/es6.md)
   * [javascript引擎](/_javascript/引擎.md)
   * [javascript核心概念](/_javascript/核心概念.md)
+  * [javascript高级技巧](/_javascript/javascript高级技巧.md)
+  * [JavaScript设计模式](/_javascript/JavaScript设计模式.md)
 * vue
   * [vue3.0](/_vue/vue3.0.md)
   * [源码解读](/_vue/源码解读.md)
