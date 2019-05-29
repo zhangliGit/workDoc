@@ -11,3 +11,9 @@
 + querySelector() 通过id或class或元素 获取dom节点
 + querySelectorAll() 通过class或元素获取dom节点列表
 
+### dom元素位置属性
+
++ event对象
+
+
+

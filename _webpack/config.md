@@ -32,7 +32,7 @@ module.exports = {
     hotOnly: false,
     proxy: {
       '/healthy': {
-        target: 'http://xiaoyueyue.com.cn:3000',
+        target: 'http://test.coracle.com:10151/patachealth',
         changeOrigin: true,
         ws: true,
         pathRewrite: {
