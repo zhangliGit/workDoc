@@ -38,6 +38,7 @@
   * [javascript高级技巧](/_javascript/javascript高级技巧.md)
   * [JavaScript设计模式](/_javascript/JavaScript设计模式.md)
 * vue
+  * [vue3.0脚手架配置](/_vue/vue3.0脚手架配置.md)
   * [vue3.0](/_vue/vue3.0.md)
   * [源码解读](/_vue/源码解读.md)
   * [问题思考](/_vue/问题思考.md)
