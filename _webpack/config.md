@@ -202,3 +202,26 @@ export default hostUrl
 ```
 打包的history模式需要在服务器中配置访问，还需配置刷新访问404问题， 本地不能访问
 ```
+
+### vue/3.0配置less全局less变量
+
+先按照依赖
+
+```
+vue add style-resources-loader
+```
+
+在vue.config.js中设置
+
+```js
+const path = require('path');
+module.exports = {
+  pluginOptions: {
+    'style-resources-loader': {
+      preProcessor: 'less',
+      patterns: [
+        path.resolve(__dirname, './src/assets/style/common.less'),
+      ],
+    },
+  }
+```
