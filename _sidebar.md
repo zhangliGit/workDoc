@@ -12,10 +12,10 @@
   * [项目梳理](/_react-mobile-pro/项目梳理.md)
 * 浏览器
   * [浏览器运行机制](/_browser/浏览器运行机制.md)
-  * [浏览器加载知识](/_browser/浏览器加载知识.md)
   * [浏览器渲染原理](/_browser/浏览器渲染原理.md)
   * [浏览器默认事件](/_browser/浏览器默认事件.md)
   * [浏览器调试](/_browser/浏览器调试.md)
+  * [浏览器兼容](/_browser/浏览器兼容.md)
 * html5
   * [Html5功能](/_html5/Html5功能.md)
 * css
@@ -63,11 +63,15 @@
 * 前端安全
 * git
   * [git操作](/_git/git操作.md)
+* linux
+  * [linux操作](/_linux/linux操作.md)
 * nginx
   * [nginx安装](/_nginx/install.md)
   * [https配置](/_nginx/https.md)
   * [操作命令](/_nginx/操作命令.md)
   * [常见配置](/_nginx/常见配置.md)
+  * [反向代理](/_nginx/反向代理.md)
+  * [负载均衡](/_nginx/负载均衡.md)
 * node
   * [node知识点](/_node/node.md)
 * 前端问题记录
