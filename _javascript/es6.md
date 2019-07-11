@@ -53,3 +53,22 @@ class Child extends Parent {
 }
 var child = new Child('zhangli', 'nan', '30')
 ```
+
+
+#### create方法
+
+Object.create方法用来创建一个对象,第一个参数为对象或null，为对象的原型对象，第二个参数可选，表示添加到对象的可枚举属性
+
+```js
+var obj = Object.create(null, {
+    a: {
+        value: 12
+    }
+})
+```
+
+### setPrototypeOf
+
+Object.setPrototypeOf(obj, null) 此方法用来设置对象的原型对象，可以用来切断原型链
+
+### 
