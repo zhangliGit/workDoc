@@ -31,8 +31,11 @@
 * javaScript
   * [bom](/_javascript/bom.md)
   * [dom](/_javascript/dom.md)
+  * [js进制数据](/_javascript/js进制数据.md)
+  * [js内置方法函数](/_javascript/js内置方法函数.md)
   * [数组](/_javascript/数组.md)
   * [对象](/_javascript/对象.md)
+  * [函数](/_javascript/函数.md)
   * [ES5](/_javascript/es5.md)
   * [ES6/7/8](/_javascript/es6.md)
   * [javascript引擎](/_javascript/引擎.md)
@@ -63,6 +66,8 @@
   * [插件配置](/_webpack/plugin.md)
 * 前端性能
 * 前端安全
+* http
+  * [http相关知识点](/_http/http相关知识点.md)
 * git
   * [git操作](/_git/git操作.md)
 * linux
@@ -75,6 +80,7 @@
   * [反向代理](/_nginx/反向代理.md)
   * [负载均衡](/_nginx/负载均衡.md)
 * node
+  * [npm知识点](/_node/npm.md)
   * [node知识点](/_node/node.md)
 * 前端问题记录
   * [杂类](_problem/杂类.md)
